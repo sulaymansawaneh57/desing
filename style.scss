@@ -1,0 +1,144 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  margin: auto;
+  background-color:  hsl(0, 0%, 98%);
+  width: 375px;
+  font-size: 15px;
+  padding: 20px;
+  &__header{
+    margin-top: 10px;
+    
+  }
+  &__title{
+    margin-top: 10px;
+    
+    padding: 20px;
+  }
+  &__title--light{
+    color:  hsl(229, 6%, 66%);
+    font-size: 25px;
+   
+    
+  }
+  &__title--bold{
+font-size: 26px;
+  }
+
+  &__text-content{
+    color:  hsl(229, 6%, 66%);
+    padding: 20px;
+  }
+  &--header-text{
+    margin-bottom: 10px;
+  }
+&__text{
+  height: 270px;
+  background-color: white;
+  border-top: 2px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  
+
+}
+&--supervisor{
+  
+  border-color: hsl(212, 86%, 64%);
+  
+}
+&--team{
+  border-color: hsl(0, 78%, 62%);
+}
+&--karma{
+  border-color:  hsl(34, 97%, 64%);
+
+}
+&--calculator{
+border-color: hsl(180, 62%, 55%);
+}
+&__icons{
+  position: absolute;
+  top: 90px;
+  right: 10px;
+
+
+}
+
+@media only screen and  (min-width: 1044px) {
+  width: 1044px;
+  margin: auto;
+  
+  &__header{
+   text-align: center;
+  
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   padding: 10px;
+    
+  }
+  &--header-text{
+ width: 50%;
+ margin: auto;
+  }
+  &__main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    
+    
+  }
+  &__text{
+    margin: 10px;
+    position: relative;
+  }
+  &--supervisor{
+  
+    grid-column:1/1;
+    grid-row: 2/3;
+    
+  }
+  &--team{
+  
+    grid-column:2/2;
+    grid-row: 1/2;
+    
+    transform: translate(0, 32%);
+    
+    
+  }
+  &--karma{
+  
+    grid-column:2/2;
+    grid-row: 2/3;
+    transform: translate(0, 32%);
+  
+    
+    
+    
+  }
+  &--calculator{
+  
+    grid-column:3/3 ;
+    grid-row: 2/3;
+    
+    
+  }
+  
+}
+
+
+
+}
